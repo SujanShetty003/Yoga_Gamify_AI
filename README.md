@@ -1,10 +1,10 @@
-# Yoga_Gamify_AI
+# Yoga_Gamify_AI (Gesture Control Game Interaction)
 
 This project allows you to control the popular game Subway Surfers using real-time hand gestures detected through your webcam. It leverages the MediaPipe library for hand and pose tracking and PyAutoGUI to simulate keyboard inputs.
 
 **Features**
 Shoulder Position Detection: Move the character left or right based on shoulder alignment.
-Hand Gestures:
+**Hand Gestures:**
     Raise two fingers on both hands to start the game.
     Use gestures to trigger in-game actions like jump (up) and slide (down).
     Real-Time Processing: Smooth and responsive gesture recognition using a webcam.
@@ -14,8 +14,8 @@ Hand Gestures:
 **Libraries:**
 Ensure the following Python libraries are installed:
 
-  OpenCV
-  MediaPipe
+  OpenCV,
+  MediaPipe,
   PyAutoGUI
 
 **You can install them with:** 
@@ -23,11 +23,11 @@ Ensure the following Python libraries are installed:
         pip install opencv-python mediapipe pyautogui
 
 
-Hardware Requirements:
+**Hardware Requirements:**
   A webcam (internal or external).
   A computer capable of running Python and the above libraries.
 
-How to Run:
+**How to Run:**
   python your_script.py
 
 **This will start the webcam and launch the hand gesture detection interface.**
