@@ -2,23 +2,23 @@
 
 This project allows you to control the popular game Subway Surfers using real-time hand gestures detected through your webcam. It leverages the MediaPipe library for hand and pose tracking and PyAutoGUI to simulate keyboard inputs.
 
-Features
+**Features**
 Shoulder Position Detection: Move the character left or right based on shoulder alignment.
 Hand Gestures:
     Raise two fingers on both hands to start the game.
     Use gestures to trigger in-game actions like jump (up) and slide (down).
     Real-Time Processing: Smooth and responsive gesture recognition using a webcam.
 
-Prerequisites:
+**Prerequisites:**
 
-Libraries:
+**Libraries:**
 Ensure the following Python libraries are installed:
 
   OpenCV
   MediaPipe
   PyAutoGUI
 
-You can install them with: 
+**You can install them with:** 
     Command:
         pip install opencv-python mediapipe pyautogui
 
@@ -29,10 +29,10 @@ Hardware Requirements:
 
 How to Run:
   python your_script.py
-**
-This will start the webcam and launch the hand gesture detection interface.
-**
-Control the Game:
+
+**This will start the webcam and launch the hand gesture detection interface.**
+
+**Control the Game:**
 
   Open the Subway Surfers game.
   Position yourself in front of the webcam.
@@ -44,7 +44,7 @@ Control the Game:
 
 
 
-Gesture Mapping:
+**Gesture Mapping:**
   Gesture	Actions:
     Two fingers raised on both hands => Start the game
     Lean shoulders left =>	Move left
@@ -59,14 +59,14 @@ Gesture Mapping:
     If gestures are not recognized, adjust your position or improve lighting conditions.
 
 
-Troubleshooting:
+**Troubleshooting:**
   Issue: The game does not respond to gestures.
   Solution: Ensure that the game window is focused and accepts keyboard inputs.
   Issue: Gesture detection is inaccurate.
   Solution: Verify that the webcam view shows all relevant body parts clearly.
 
 
-Acknowledgments
+**Acknowledgments**
   MediaPipe: For providing efficient hand and pose tracking.
   PyAutoGUI: For simulating keyboard inputs to control the game.
 
