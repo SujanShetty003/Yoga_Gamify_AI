@@ -14,9 +14,9 @@ Shoulder Position Detection: Move the character left or right based on shoulder 
 **Libraries:**
 Ensure the following Python libraries are installed:
 
-  OpenCV,
-  MediaPipe,
-  PyAutoGUI
+OpenCV,
+MediaPipe,
+PyAutoGUI
 
 **You can install them with:** 
     Command:
