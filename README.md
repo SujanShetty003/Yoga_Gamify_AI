@@ -15,7 +15,9 @@ Shoulder Position Detection: Move the character left or right based on shoulder 
 Ensure the following Python libraries are installed:
 
 OpenCV,
+
 MediaPipe,
+
 PyAutoGUI
 
 **You can install them with:** 
@@ -24,8 +26,9 @@ PyAutoGUI
 
 
 **Hardware Requirements:**
-  A webcam (internal or external).
-  A computer capable of running Python and the above libraries.
+A webcam (internal or external).
+
+A computer capable of running Python and the above libraries.
 
 **How to Run:**
   python your_script.py
