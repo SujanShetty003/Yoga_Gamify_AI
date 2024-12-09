@@ -4,10 +4,14 @@ This project allows you to control the popular game Subway Surfers using real-ti
 
 **Features**
 Shoulder Position Detection: Move the character left or right based on shoulder alignment.
+
 **Hand Gestures:**
-    Raise two fingers on both hands to start the game.
-    Use gestures to trigger in-game actions like jump (up) and slide (down).
-    Real-Time Processing: Smooth and responsive gesture recognition using a webcam.
+
+Raise two fingers on both hands to start the game.
+
+Use gestures to trigger in-game actions like jump (up) and slide (down).
+
+Real-Time Processing: Smooth and responsive gesture recognition using a webcam.
 
 **Prerequisites:**
 
@@ -37,23 +41,35 @@ A computer capable of running Python and the above libraries.
 
 **Control the Game:**
 
-  Open the Subway Surfers game.
-  Position yourself in front of the webcam.
-  Perform gestures as follows:
-  Raise both index and middle fingers to start.
-  Lean shoulders left/right to move the character.
-  Raise hands up to jump.
-  Lower hands down to slide.
+Open the Subway Surfers game.
+
+Position yourself in front of the webcam.
+
+Perform gestures as follows:
+
+Raise both index and middle fingers to start.
+
+Lean shoulders left/right to move the character.
+
+Raise hands up to jump.
+
+Lower hands down to slide.
 
 
 
 **Gesture Mapping:**
+
   Gesture	Actions:
-    Two fingers raised on both hands => Start the game
-    Lean shoulders left =>	Move left
-    Lean shoulders right	=> Move right
-    Mid-point above initial position (up)	=> Jump
-    Mid-point below initial position (down)	=> Slide
+    
+Two fingers raised on both hands => Start the game
+
+Lean shoulders left =>	Move left
+    
+Lean shoulders right	=> Move right
+    
+Mid-point above initial position (up)	=> Jump
+    
+Mid-point below initial position (down)	=> Slide
 
 
 **Notes**
@@ -63,14 +79,20 @@ A computer capable of running Python and the above libraries.
 
 
 **Troubleshooting:**
-  Issue: The game does not respond to gestures.
-  Solution: Ensure that the game window is focused and accepts keyboard inputs.
-  Issue: Gesture detection is inaccurate.
-  Solution: Verify that the webcam view shows all relevant body parts clearly.
+
+Issue: The game does not respond to gestures.
+
+Solution: Ensure that the game window is focused and accepts keyboard inputs.
+
+Issue: Gesture detection is inaccurate.
+  
+Solution: Verify that the webcam view shows all relevant body parts clearly.
 
 
 **Acknowledgments**
-  MediaPipe: For providing efficient hand and pose tracking.
-  PyAutoGUI: For simulating keyboard inputs to control the game.
+
+MediaPipe: For providing efficient hand and pose tracking.
+
+PyAutoGUI: For simulating keyboard inputs to control the game.
 
 
