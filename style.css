@@ -1,0 +1,1043 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: HK Grotesk;
+
+}
+
+h1 {
+  /*color: #2800FF;*/
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  margin:0; padding:0;
+}
+
+h3 {
+  color: #2800FF;
+  font-size:1.5rem;
+}
+
+#confidence {
+    font-weight: bold;
+    color: #DE99EE;
+}
+
+#pose{
+  
+      font-size: 57px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2800FF;
+}
+
+canvas {
+  display: block;
+  width:100% !important;
+}
+#emoji {
+    background: #F3F3F3;
+    padding: 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div {
+  padding:4px;
+}
+.icon {
+    width: 12%;
+    float: left;
+}
+div#benefits-body {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+    width: 88%;
+}
+div#benefits-mind {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+  width: 88%;
+}
+div#benefits-organs {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+  width: 88%;
+}
+.clr{
+  clear: both;
+}
+#cues {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+}
+div#confidence {
+    width: 60px;
+    background: #43ffe6;
+    color: #fff !important;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    margin: -50px 30px 0;
+    position: relative;
+}
+.radio_buttons_\(speak_mode\) {
+    background-image: url(https://cdn.glitch.global/17f219c7-37f5-4b89-868c-f43ca80af41e/radio.png?v=1642874916921);
+    background-repeat: no-repeat;
+    background-position: 4px 0px;
+    background-size: contain;
+    margin-top: 9px;
+}
+.radio_buttons_\(write_mode\) {
+    background-image: url(https://cdn.glitch.global/17f219c7-37f5-4b89-868c-f43ca80af41e/blue1.png?v=1642874842451);
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+    margin-top: 6px;
+}
+
+#image img {
+  width:100%;
+}
+ 
+video {
+    display:none;
+}
+
+/* Page structure */
+
+.wrapper {
+    background-color: #F3E9D6;
+    padding-bottom: 35px;
+}
+
+
+h1.fz {
+    font-size: 57px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.emoji{
+    background: #F3F3F3;
+    padding: 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+img.war {
+    width: 110px;
+    /* align-items: center; */
+}
+
+
+h2.pay {
+    font-family: 'Bitter', sans;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+}
+h5.cues {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+}
+.cues {
+    margin: 10px 0;
+}
+ul#ul {
+    margin-bottom: -5px;
+    margin-left: -33px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img.btn {
+    width: 25%;
+}
+img.bck {
+    width: 100%;
+    height: 630px;
+}
+h5 {
+    font-size: 17px;
+}
+.static {
+    background-color: white;
+    padding: 14px;
+    
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.left1 {
+    width: 65%;
+    float: left;
+}
+.right1 {
+    float: left;
+    width: 35%; 
+}
+p.app {
+    font-size: 14px;
+
+    line-height: 23px;
+}
+p.apps {
+    line-height: 16px;
+    padding-top: 4px;
+    font-size: 14px;
+}
+a.btn.btn-primary {
+    font-size: 7px;
+}
+ol.ol_t {
+    margin-left: -11px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 14px;
+}
+ol {
+  counter-reset: count;
+}
+
+ol li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 9px;
+}
+ol li:before {
+    counter-increment: count;
+    content: counter(count)" ";
+    /* margin-right: 0.5em; */
+    display: inline-block;
+    padding: 0 6px 0 6px;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--c,#5076FF);
+    position: absolute;
+    left: -25px;
+}
+#speak li#speak1 {
+    background-image: url(https://cdn.glitch.global/17f219c7-37f5-4b89-868c-f43ca80af41e/speaker.png?v=1642874926081);
+    list-style-position: outside;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    font-family: 'Bitter', sans;
+    background-repeat: no-repeat;
+    list-style: none;
+    padding: 0 0 0 38px;
+    background-position: 0px -2px;
+}
+img.img_radio {
+    position: absolute;
+}
+.form-check.radio {
+    position: relative;
+    top: 3px;
+    left: 15px;
+}
+.form-check-input:checked {
+    background-color: #FFC0CC !important;
+    border-color: #FFC0CC !important;
+}
+.form-check-input[type=radio] {
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 23px;
+}
+div#followUp {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+ul#speak {
+    margin-bottom: 0;
+    margin-left: -12px;
+}
+#speak li#speak1s {
+    background-image:url(https://cdn.glitch.global/17f219c7-37f5-4b89-868c-f43ca80af41e/book.png?v=1642874853081);
+    list-style-position:outside;
+    font-size: 14px;
+    font-weight: 600;
+        padding-bottom: 8px;
+    font-family: 'Bitter', sans;
+    background-repeat: no-repeat;
+    list-style: none;
+    padding: 0 0 0 38px;
+    background-position: 0px -2px;        
+}
+label.ml-5 {
+    margin-left: 18px;
+    font-weight: 500;
+}
+.mg_img {
+    background-image: url(https://cdn.glitch.global/17f219c7-37f5-4b89-868c-f43ca80af41e/mg1.png?v=1642874883434);
+    /* height: 841px; */
+    
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-y: bottom;
+}
+.mg_img1 {
+    background-image: url(https://cdn.glitch.global/17f219c7-37f5-4b89-868c-f43ca80af41e/mg.png?v=1642874877215);
+    /* height: 841px; */
+    
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: right;
+}
+
+.container.mg {
+    max-width: 1253px;
+    padding-top: 50px;
+/*    padding-bottom: 30px;*/
+}
+a.btn.btn-primary {
+    font-size: 0.7vw;
+    padding: 10px;
+    background-color: #5076FF;
+    border-color: #5076ff;
+}
+
+.webcam #webcam {
+    /* background-image: url(https://cdn.glitch.global/17f219c7-37f5-4b89-868c-f43ca80af41e/bg.png?v=1642874747710); */
+    height: 640px;
+    background-size: cover;
+    position: relative;
+}
+.confidence {
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    background: #FBC2C9;
+    color: white;
+    font-weight: 800;
+    padding: 8px 18px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.status_nn {
+    position: absolute;
+    background: #FFBDCA;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px 0 0px;
+    top: 13px;
+    font-family: 'Roboto', sans-serif;
+    left: 25px;
+}
+ul#snn {
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -17px;
+}
+
+.status_posenet {
+    position: absolute;
+    top: 58px;
+    left: 25px;
+    background: #FFBDCA;
+    color: white;
+    border-radius: 10px;
+    padding: 7px 8px 0 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.pose1 {
+    display: none;
+}
+.emoji_is_static1 {
+    display: none;
+}
+.static1 {
+    display: none;
+}
+.col-lg-3.mobile {
+    display: none;
+}
+.col-lg-2.mobile {
+    display: none;
+}
+
+label.form-check-label.r {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1100px)
+{
+    a.btn.btn-primary {
+   /* font-size: 6px;*/
+    padding: 10px;
+}
+label.form-check-label.r {
+   /* font-weight: 400;*/
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 14px;
+}
+p.app {
+    margin-bottom: 0;
+}
+ol li {
+ 
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 20px;
+}
+p.app {
+    font-size: 14px;
+    /* font-family: 'Open Sans', sans-serif; */
+    line-height: 18px;
+    
+}
+p.apps {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 9px;
+}
+ol.ol_t {
+    margin-bottom: 19px;
+}
+
+}
+
+@media screen and (max-width: 1024px)
+{
+    label.form-check-label.r {
+    font-size: 12px;
+}
+ol li {
+    font-size: 12px;
+}
+p.app {
+    font-size: 12px;
+    line-height: 20px;
+}
+p.apps {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 9px;
+}
+
+}
+
+@media screen and (max-width: 980px)
+{
+       .pose1 {
+    display: block;
+}
+.pose {
+    display: none;
+}
+.col-lg-4.dsply {
+    display: none;
+}
+.status_nn {
+    display: none;
+}
+.status_posenet {
+    display: none;
+}
+.col-lg-3.desktop {
+    display: none;
+}
+.col-lg-2.desktop {
+    display: none;
+}
+.col-lg-2.mobile {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.col-lg-3.mobile {
+    display: block;
+}
+.container.mg {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.mg_img1 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.static1 {
+    background-color: #FFC0CC;
+    text-align: center;
+    border-radius: 31px;
+    margin-top: 12px;
+    display: block;
+    line-height: 24px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+p.static1 {
+    color: #AE0C28;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.3vw !important;
+}
+
+}
+
+@media screen and (max-width: 700px)
+{
+    .pose1 {
+    display: block;
+}
+div#webcam {
+    width: 100%;
+}
+.pose {
+    display: none;
+}
+
+a.btn.btn-primary {
+    font-size: 2.9vw;
+    padding: 10px;
+}
+ul#speak {
+    margin-top: 21px;
+}
+.emoji_is_static {
+    display: none;
+}
+.emoji_is_static1 {
+    float: right;
+    margin-top: 14px;
+    display: block;
+    background: #5076FF;
+    border-radius: 24px;
+}
+
+label.form-check-label.r {
+    position: absolute;
+    top: -37px;
+}
+.form-check.radio {
+    display: inline-grid;
+    padding-left: 31px;
+    font-size: 15px;
+    margin-top: -20px;
+    padding-bottom: 11px;
+}
+
+.col-lg-4.dsply {
+    display: none;
+}
+h5.cues {
+    font-size: 23px;
+    line-height: 30px;
+}
+#ul li#emoji_are_static {
+    font-size: 23px;
+    background-position: 0px 5px;
+}
+#ul li#emoji_are_static1 {
+    font-size: 23px;
+    background-position: 0px 5px;
+}
+#ul li#emoji_are_static2 {
+    font-size: 23px;
+    background-position: -7px 5px;
+}
+ol li {
+    font-size: 17px;
+}
+p.app {
+    font-size: 17px;
+    line-height: 24px;
+}
+p.pay {
+    font-size: 23px;
+
+}
+.look {
+    padding-bottom: 33px;
+}
+.mg_img {
+    background-position-y: center;
+}
+p.apps {
+    font-size: 17px;
+        display: initial;
+
+}
+
+.static1 {
+    background-color: #FFC0CC;
+    text-align: center;
+    border-radius: 31px;
+    margin-top: 12px;
+    display: block;
+    line-height: 24px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+p.static1 {
+    color: #AE0C28;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.3vw !important;
+}
+.status_nn {
+    display: none;
+}
+.status_posenet {
+    display: none;
+}
+.left1 {
+    width: 50%;
+    float: left;
+}
+.right1 {
+    float: left;
+    width: 50%;
+}
+
+.col-lg-3.desktop {
+    display: none;
+}
+.col-lg-2.desktop {
+    display: none;
+}
+.col-lg-2.mobile {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.col-lg-3.mobile {
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 620px)
+{
+
+div#pose {
+    font-size: 10vw;
+}
+    p.static1 {
+    font-size: 13px;
+}
+h5.cues {
+    font-size: 23px;
+    width: 80%;
+}
+.left1 {
+    width: 60%;
+    float: left;
+}
+.right1 {
+    float: left;
+    width: 40%;
+}
+p.static1 {
+    font-size: 2.2vw !important;
+}
+
+}
+
+@media screen and (max-width: 570px)
+{
+    .left {
+    float: left;
+    width: 50%;
+}
+.right {
+    width: 50%;
+    float: left;
+}
+img.btn {
+    width: 38%;
+}
+.form-check.radio {
+    padding-left: 46px;
+    font-size: 17px;
+}
+.form-check.radio {
+    padding-left: 46px;
+    font-size: 17px;
+    left: 6px;
+}
+div#confidence {
+    margin: -45px 20px 0;
+}
+canvas{
+    height: auto !important;
+}
+
+}
+.col-lg-5.col-md-5.col-sm-6.right1 {
+    width: 35%;
+    float: left;
+}
+.col-lg-7.col-md-7.col-sm-6.left1 {
+    width: 65%;
+    float: left;
+}
+p.apps {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+@media screen and (max-width: 510px)
+{
+  .webcam {
+    height: 320px;
+}
+#snn li#snn_li {
+    font-size: 9px;
+}
+.confidence {
+    right: 15px;
+    font-size: 13px;
+}
+p.static1 {
+    font-size: 11px;
+}
+p.static1 {
+    font-size: 2.1vw !important;
+}
+
+}
+
+@media screen and (max-width: 463px)
+{
+/*    a.btn.btn-primary {
+    font-size: 13px;
+}*/
+h1.fz {
+    font-size: 43px;
+}
+.form-check.radio {
+    padding-left: 31px;
+    font-size: 17px;
+    left: 6px;
+}
+label.form-check-label.r {
+    font-size: 17px;
+
+}
+
+.form-check.radio {
+    left: 11px;
+    padding-bottom: 8px;
+}
+ol li {
+    font-size: 15px;
+}
+p.app {
+    font-size: 15px;
+}
+p.apps {
+    font-size: 15px;
+    line-height: 24px;
+}
+h5.cues {
+    font-size: 20px;
+    font-weight: 600;
+}
+p.pay {
+    font-size: 20px;
+}
+#ul li#emoji_are_static {
+    font-size: 20px;
+}
+#ul li#emoji_are_static1 {
+    font-size: 20px;
+}
+#ul li#emoji_are_static2 {
+    font-size: 20px;
+}
+
+.confidence {
+    right: 10px;
+    font-size: 10px;
+}
+label.form-check-label.r {
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 400px)
+{
+/*    a.btn.btn-primary {
+    font-size: 11px;
+}*/
+ol li {
+    font-size: 13px;
+}
+p.apps {
+    font-size: 13px;
+    line-height: 20px;
+}
+p.app {
+    font-size: 13px;
+}
+h5.cues {
+    font-size: 16px;
+    width: 89%;
+    font-weight: 600;
+}
+label.form-check-label.r {
+    font-size: 12px;
+}
+.emoji_is_static1 {
+    margin-top: 3px;
+}
+label.form-check-label.r {
+    top: -25px;
+        font-size: 11px;
+}
+.form-check.radio {
+    left: 17px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+}
+#ul li#emoji_are_static {
+    font-size: 16px;
+}
+#ul li#emoji_are_static1 {
+    font-size: 16px;
+}
+#ul li#emoji_are_static2 {
+    font-size: 16px;
+}
+p.pay {
+    font-size: 16px;
+}
+.pose1 {
+    margin-bottom: 15px;
+}
+h1.fz {
+    font-size: 40px;
+}
+p.static1 {
+    font-size: 2.0vw !important;
+}
+a.btn.btn-primary {
+    font-size: 2.8vw;
+    padding: 10px;
+}
+
+@media screen and (max-width: 360px)
+{
+    img.btn {
+    width: 50%;
+}
+
+.emoji_is_static1 {
+    margin-top: 16px;
+}
+label.form-check-label.r {
+    top: -21px;
+    font-size: 9px;
+}
+.col-lg-6.col-md-6.col-sm-6.left {
+    float: left;
+    width: 55%;
+}
+.col-lg-6.col-md-6.col-sm-6.right {
+    width: 45%;
+    float: left;
+}
+/*a.btn.btn-primary {
+    font-size: 9px;
+}*/
+h1.fz {
+    font-size: 35px;
+}
+.static1 {
+    padding: 1px 4px;
+}
+a.btn.btn-primary {
+    font-size: 2.6vw;
+    padding: 10px;
+}
+h5.cues {
+    line-height: 20px;
+}
+#ul li#emoji_are_static {
+    
+    background-position: 0px 0px;
+     line-height: 30px;
+}
+#ul li#emoji_are_static1 {
+    
+    background-position: 0px 0px;
+     line-height: 30ppx;
+}
+#ul li#emoji_are_static2 {
+    background-position: -10px 0px;
+    line-height: 30px;
+}
+}
+/*.main { grid-area: main; }
+
+.footer { grid-area: footer; }
+
+.header {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    "nav nav nav";
+  grid-area: header;
+}
+
+.nav { grid-area: nav; }
+
+.instructions { grid-area: instructions; }
+
+.sidefooter { grid-area: sidefooter; }
+
+.output { grid-area: output; }
+
+.credit {
+  width: 90%;
+}
+} */
+*/
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 1rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Our remix on glitch button */
+.btn--remix {
+  font-family: HK Grotesk;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: left;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  margin-right: auto;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #D0FFF1;
+}
+
+/* .footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  border-style: none;
+} */
+
+/* .footer a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+} */
+
+/* Navigation grid */
+/* .footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+} */
+
+
+.divider {
+  padding: 0 1rem;
+}
+
+/* Button - Add it from the README instructions */
+button,input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+}
+img {
+    border-radius: 50%;
+    height: 124px;
+    width: 150px;
+  }

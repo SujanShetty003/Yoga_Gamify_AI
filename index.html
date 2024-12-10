@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ML5 Pose Yoga</title>
+  
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.js"></script>   -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection/dist/pose-detection.js"></script>-->
+    
+    <!-- Require the peer dependencies of pose-detection. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>    
+
+    <!-- You must explicitly require a TF.js backend if you're not using the TF.js union bundle. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <!-- Alternatively you can use the WASM backend: <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    
+        <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- import gogole fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300&family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet"/>
+
+
+  </head>
+  <style>
+    .footer_body{
+      font-style: italic;
+      background-color: antiquewhite;
+      margin-left: 60%;
+    }
+    .Team{
+      width: 50%; height: 140px; float: left; background: rgb(163, 255, 160);
+      font-size: 69px;
+    }
+    .member{
+      width: 50%; height: 140px; float: left; background: rgb(163, 255, 160);
+    }
+    .mem_body{
+       margin-left: 70px;
+    }
+    .B{
+      width: 30%;
+    }
+    .C{
+      width: 70%;
+      font-size: 100px;
+    }
+    .A{
+      background-color: rgb(217, 255, 140);
+    }
+</style>
+  <body>
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="A">
+      <div class="row">
+        <div class="B"><center><img src="Logo.jpg" alt="AVENTUS"></center></div>
+      <div class="C"><center>Team Cookie Army</center></div>
+    </div>
+    </div>
+    <div class="wrapper">   
+      <div class="mg_img1">
+        <div class="mg_img">
+          <div class="container mg">
+            <div style="border-radius: 10px; background-color: rgb(229, 248, 131)">
+              
+              <div class="row">
+                	<div class="col-lg-7 col-md-7 position-relative">
+                  
+                  <div id="webcam"></div>
+                  
+                        <!-- IF YOU MAKE THESE THE SAME DIV CLASS OR UL ID, YOU CAN STYLE BOTH THE SAME WAY? -->
+                  <div class="status_nn">
+                    <ul id="snn">
+                      
+                        <!-- BEFORE: <li id="snn_li">Neural Network Loaded</li>  -->
+                        <!-- MUST BE: div id="status-nn"  -->
+
+                      <div id="status-nn">Neural Network loading</div>
+                    </ul>
+                  </div>
+
+                  <div class="status_posenet">
+                    <ul id="snn">
+
+                      <div id="status-posenet">MoveNet loading</div>
+                    </ul>
+                  </div>
+
+                  <div id="confidence">0% certainty</div>
+                </div>
+              
+                    <div class="col-lg-5 col-md-5">
+                        <div class="look">
+                          
+                          <h2 class="pay">This looks like ..</h2>
+        
+                          <!-- BEFORE: <div class="pose"> <h1 class="fz">Vrkasanalalala</h1> </div>
+                                        there was also a double: <div class="pose1"> but we only need 1? -->
+                          <!-- MUST BE: <div id="pose">placeholder</div> -->
+                          
+                          <h1> <div id="pose">... classifier loading</div> </h1>
+        
+                      
+        
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 left pb-3">
+                              <div id="emoji">👋🏼</div>
+
+                              
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-6 left">
+                             <!-- BEFORE:<div class="emoji_is_static" id="follow-up">what is next?</div> -->
+                              
+                              <div class="icon">⏭</div>
+                              <div id="followUp">up next</div>
+                            </div>
+                            
+                            
+                          <div class="cues">
+                            <h2 class="pay">Pay attention to...</h2>
+        
+                           <!-- BEFORE:  <h5 class="cues">Tuck your chin</h5>
+                            <h5 class="cues">Turn your knee outward</h5>
+                            <h5 class="cues">Press your foot into the leg & leg into the foot</h5> -->
+                            <!-- MUST BE: <div id="pose">placeholder</div> -->
+                            <div id="cues">your breath for now</div>
+                        
+                          </div>
+        
+                          <div>
+                          <!-- this 'pay' can be a h2 so its same styling as other h2 ? -->
+        
+                            <h2 class="pay">Benefits include ..</h2>
+                              <div class="icon">
+                                🤸‍♀️🦶
+                            </div><div id="benefits-body">the body</div><div class="clr">
+                            
+                            </div>
+                              <div class="icon">
+                                🌸🧠
+                            </div><div id="benefits-mind">the mind</div><div class="clr">
+                            
+                            </div>
+                             <div class="icon">
+                               🫀🫁
+                            </div><div id="benefits-organs">the organs</div><div class="clr">
+                            
+                            </div>
+                            </div>
+        
+                              </div>
+                            </div>
+                          </div>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--  container end -->
+  
+      <script src="sketch.js"></script>
+      <iframe src="./ifr.html" onload="this.style.display='none'">
+        
+</iframe>
+
+  </body>
+</html>
