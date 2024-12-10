@@ -1,98 +1,92 @@
-# Yoga_Gamify_AI (Gesture Control Game Interaction)
+# Yoga_Gamify_AI
 
-This project allows you to control the popular game Subway Surfers using real-time hand gestures detected through your webcam. It leverages the MediaPipe library for hand and pose tracking and PyAutoGUI to simulate keyboard inputs.
+This project enables real-time yoga pose detection using a webcam. It leverages the MediaPipe library for body and pose tracking and provides feedback to users to ensure proper posture during yoga exercises.
 
 **Features**
-Shoulder Position Detection: Move the character left or right based on shoulder alignment.
 
-**Hand Gestures:**
+Real-time Pose Detection: Track and display key body landmarks to ensure proper form during yoga poses.
 
-Raise two fingers on both hands to start the game.
+Pose Accuracy Feedback: Visual or textual feedback when the user’s pose deviates from the expected form.
 
-Use gestures to trigger in-game actions like jump (up) and slide (down).
+Pose Library: Detect and validate common yoga poses (e.g., Downward Dog, Warrior Pose, etc.).
 
-Real-Time Processing: Smooth and responsive gesture recognition using a webcam.
+Interactive Interface: Display key points on the user's body and guide them through the correct alignment.
 
-**Prerequisites:**
+**Prerequisites**
 
-**Libraries:**
+Libraries
 Ensure the following Python libraries are installed:
 
-OpenCV,
+OpenCV
 
-MediaPipe,
+MediaPipe
 
-PyAutoGUI
+NumPy
 
-**You can install them with:** 
-    Command:
-        pip install opencv-python mediapipe pyautogui
+**You can install them with:**
 
+command
 
-**Hardware Requirements:**
+pip install opencv-python mediapipe numpy
+
+**Hardware Requirements**
+
 A webcam (internal or external).
 
 A computer capable of running Python and the above libraries.
 
-**How to Run:**
-  python your_script.py
+**How to Run**
+**
+Run the Script:**
 
-**This will start the webcam and launch the hand gesture detection interface.**
+Execute the Python script to start detecting yoga poses:
 
-**Control the Game:**
+python yoga_pose_detection.py
 
-Open the Subway Surfers game.
+This will open the webcam and display the pose tracking interface.
+
+**Perform Yoga Poses:**
 
 Position yourself in front of the webcam.
 
-Perform gestures as follows:
+The system will track your body’s key points and compare them to predefined yoga poses.
 
-Raise both index and middle fingers to start.
+You'll receive feedback on whether your pose is correct or needs adjustment.
 
-Lean shoulders left/right to move the character.
+Pose Detection Feedback
+**Pose Mapping**
+Pose	Feedback
 
-Raise hands up to jump.
+Downward Dog	Ensure hands and feet form a straight line
 
-Lower hands down to slide.
+Warrior Pose	Check your front knee alignment
 
-
-
-**Gesture Mapping:**
-
-  Gesture	Actions:
-    
-Two fingers raised on both hands => Start the game
-
-Lean shoulders left =>	Move left
-    
-Lean shoulders right	=> Move right
-    
-Mid-point above initial position (up)	=> Jump
-    
-Mid-point below initial position (down)	=> Slide
-
+Tree Pose	Keep the balance and foot placement in check
 
 **Notes**
-    Ensure proper lighting for accurate detection.
-    Position yourself so your shoulders and hands are clearly visible in the webcam frame.
-    If gestures are not recognized, adjust your position or improve lighting conditions.
 
+Ensure proper lighting for accurate detection.
 
-**Troubleshooting:**
+Make sure your full body is visible in the webcam frame.
 
-Issue: The game does not respond to gestures.
+If the pose is not detected, adjust your position or improve the lighting.
 
-Solution: Ensure that the game window is focused and accepts keyboard inputs.
+**Troubleshooting**
 
-Issue: Gesture detection is inaccurate.
-  
-Solution: Verify that the webcam view shows all relevant body parts clearly.
+Issue: The pose is not detected.
 
+Solution: Ensure your full body is within the webcam's view and well-lit.
+
+Issue: The pose detection is inaccurate.
+
+Solution: Adjust your posture slightly or move closer/further from the webcam for better detection.
 
 **Acknowledgments**
 
-MediaPipe: For providing efficient hand and pose tracking.
+MediaPipe: For providing efficient pose tracking.
 
-PyAutoGUI: For simulating keyboard inputs to control the game.
+OpenCV: For video capture and image processing.
+
+NumPy: For numerical operations involved in pose validation.
 
 
